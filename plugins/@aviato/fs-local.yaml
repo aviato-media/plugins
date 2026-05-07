@@ -1,0 +1,18 @@
+id: "@aviato/fs-local"
+publisher: aviato
+name: fs-local
+tier: official
+featured: true
+featuredRank: 2
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  assetPattern: "aviato-plugin-fs-local-*.tar.gz"
+
+overrides:
+  displayName: "Local Filesystem"
+  description: "Add local files to your libraries."
+  categories: [filesystem]
+  keywords: [filesystem, local, scan, watch]

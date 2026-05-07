@@ -1,0 +1,18 @@
+id: "@aviato/thumbnails"
+publisher: aviato
+name: thumbnails
+tier: official
+featured: true
+featuredRank: 3
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  assetPattern: "aviato-plugin-thumbnails-*.tar.gz"
+
+overrides:
+  displayName: "Thumbnail Generator"
+  description: "Generates thumbnails from media files using FFmpeg."
+  categories: [media-scan, generation]
+  keywords: [thumbnails, ffmpeg, artwork]

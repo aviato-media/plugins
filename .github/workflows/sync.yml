@@ -1,0 +1,65 @@
+name: sync
+
+# Triggered on every push to main (i.e. PR merge). The workflow loads the
+# changed registry yaml files into a single JSON payload and POSTs it to the
+# marketplace API. Auth is GitHub OIDC — no secrets configured here. The
+# marketplace API verifies the token's repository claim against ato/aviato-plugins
+# and the ref claim against refs/heads/main before accepting the call.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'plugins/**'
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Build entries payload
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.event.after }}
+        run: |
+          set -eu
+          changed=$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA" -- 'plugins/*.yaml' 'plugins/*.yml' || true)
+          if [ -z "$changed" ]; then
+            echo "No registry entries changed in this push."
+            exit 0
+          fi
+          bun install yaml >/dev/null
+          echo "$changed" | bun scripts/build-payload.ts > payload.json
+
+      - name: Mint OIDC token
+        if: hashFiles('payload.json') != ''
+        id: oidc
+        run: |
+          set -eu
+          token=$(curl -fsSL \
+            -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://avi.ato.software/api/plugins" \
+            | jq -r '.value')
+          echo "::add-mask::$token"
+          echo "token=$token" >> "$GITHUB_OUTPUT"
+
+      - name: Sync to marketplace
+        if: hashFiles('payload.json') != ''
+        env:
+          OIDC_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: |
+          set -eu
+          curl -fsSL -X POST \
+            -H "Authorization: Bearer $OIDC_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data-binary @payload.json \
+            https://avi.ato.software/api/plugins/internal/sync

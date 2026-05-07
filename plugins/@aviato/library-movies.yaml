@@ -1,0 +1,18 @@
+id: "@aviato/library-movies"
+publisher: aviato
+name: library-movies
+tier: official
+featured: true
+featuredRank: 1
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  assetPattern: "aviato-plugin-library-movies-*.tar.gz"
+
+overrides:
+  displayName: "Movies Library"
+  description: "Create a library of movie video files."
+  categories: [library, movies]
+  keywords: [movies, library, video]

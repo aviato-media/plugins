@@ -1,0 +1,20 @@
+name: validate
+
+on:
+  pull_request:
+    paths:
+      - 'plugins/**'
+      - 'scripts/**'
+      - '.github/workflows/validate.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install yaml zod
+      - run: bun scripts/validate.ts
