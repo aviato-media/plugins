@@ -14,5 +14,6 @@ source:
 overrides:
   displayName: "Thumbnail Generator"
   description: "Generates thumbnails from media files using FFmpeg."
+  icon: ImageSquare
   categories: [media-scan, generation]
   keywords: [thumbnails, ffmpeg, artwork]

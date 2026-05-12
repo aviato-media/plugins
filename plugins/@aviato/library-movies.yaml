@@ -14,5 +14,6 @@ source:
 overrides:
   displayName: "Movies Library"
   description: "Create a library of movie video files."
+  icon: FilmStrip
   categories: [library, movies]
   keywords: [movies, library, video]

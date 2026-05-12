@@ -35,7 +35,7 @@ const RegistryEntrySchema = z.object({
   overrides: z.object({
     displayName: z.string().optional(),
     description: z.string().optional(),
-    icon: z.string().url().optional(),
+    icon: z.string().optional(),
     screenshots: z.array(z.string().url()).optional(),
     keywords: z.array(z.string()).optional(),
     categories: z.array(z.string()).optional(),

@@ -14,5 +14,6 @@ source:
 overrides:
   displayName: "Local Filesystem"
   description: "Add local files to your libraries."
+  icon: HardDrives
   categories: [filesystem]
   keywords: [filesystem, local, scan, watch]
