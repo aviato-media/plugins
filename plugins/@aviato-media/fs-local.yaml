@@ -1,5 +1,5 @@
-id: "@aviato/fs-local"
-publisher: aviato
+id: "@aviato-media/fs-local"
+publisher: aviato-media
 name: fs-local
 tier: official
 featured: true

@@ -1,5 +1,5 @@
-id: "@aviato/library-movies"
-publisher: aviato
+id: "@aviato-media/library-movies"
+publisher: aviato-media
 name: library-movies
 tier: official
 featured: true
