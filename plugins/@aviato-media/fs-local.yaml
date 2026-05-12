@@ -10,6 +10,8 @@ source:
   owner: aviato-media
   repo: official-plugins
   assetPattern: "aviato-plugin-fs-local-*.tar.gz"
+  tagPrefix: "fs-local@"
+  manifestPath: plugins/fs-local/plugin.json
 
 overrides:
   displayName: "Local Filesystem"

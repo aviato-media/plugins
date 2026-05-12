@@ -31,6 +31,8 @@ const RegistryEntrySchema = z.object({
     repo: z.string(),
     assetPattern: z.string().optional(),
     branch: z.string().optional(),
+    tagPrefix: z.string().optional(),
+    manifestPath: z.string().optional(),
   }),
   overrides: z.object({
     displayName: z.string().optional(),
