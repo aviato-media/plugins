@@ -1,0 +1,20 @@
+id: "@aviato-media/embedded-metadata"
+publisher: aviato-media
+name: embedded-metadata
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  tagPrefix: "embedded-metadata@"
+  manifestPath: plugins/embedded-metadata/plugin.json
+  assetPattern: "aviato-plugin-embedded-metadata-*.tar.gz"
+
+overrides:
+  displayName: "Embedded Metadata"
+  description: "Extracts embedded tags and cover art from media containers using ffprobe."
+  icon: Tag
+  categories: [metadata, probe]
+  keywords: [metadata, ffprobe, tags, artwork]

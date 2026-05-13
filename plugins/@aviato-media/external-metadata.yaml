@@ -1,0 +1,20 @@
+id: "@aviato-media/external-metadata"
+publisher: aviato-media
+name: external-metadata
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  tagPrefix: "external-metadata@"
+  manifestPath: plugins/external-metadata/plugin.json
+  assetPattern: "aviato-plugin-external-metadata-*.tar.gz"
+
+overrides:
+  displayName: "External Metadata Reader"
+  description: "Reads .nfo (video) and .opf (ebook) sidecars and merges their fields into the bundle."
+  icon: FileText
+  categories: [metadata, sidecar]
+  keywords: [nfo, opf, sidecar, metadata]

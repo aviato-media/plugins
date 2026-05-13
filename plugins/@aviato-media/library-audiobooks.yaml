@@ -14,7 +14,7 @@ source:
 
 overrides:
   displayName: "Audiobooks Library"
-  description: "Create a library of audiobooks with chapter support."
+  description: "Create a library of audiobooks."
   icon: Headphones
   categories: [library, audiobooks]
   keywords: [audiobooks, library, audio, chapters]

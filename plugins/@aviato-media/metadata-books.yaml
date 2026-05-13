@@ -1,0 +1,20 @@
+id: "@aviato-media/metadata-books"
+publisher: aviato-media
+name: metadata-books
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  tagPrefix: "metadata-books@"
+  manifestPath: plugins/metadata-books/plugin.json
+  assetPattern: "aviato-plugin-metadata-books-*.tar.gz"
+
+overrides:
+  displayName: "Books Metadata"
+  description: "Extracts embedded metadata and cover art from EPUB, PDF, and DOCX ebook files."
+  icon: BookOpenText
+  categories: [metadata, books]
+  keywords: [books, ebooks, epub, pdf, docx, metadata]

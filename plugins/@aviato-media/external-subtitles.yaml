@@ -1,0 +1,20 @@
+id: "@aviato-media/external-subtitles"
+publisher: aviato-media
+name: external-subtitles
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  tagPrefix: "external-subtitles@"
+  manifestPath: plugins/external-subtitles/plugin.json
+  assetPattern: "aviato-plugin-external-subtitles-*.tar.gz"
+
+overrides:
+  displayName: "External Subtitles"
+  description: "Discovers .srt/.ass/.ssa/.vtt/.sub sidecars and surfaces embedded subtitle streams."
+  icon: ClosedCaptioning
+  categories: [subtitles, sidecar]
+  keywords: [subtitles, srt, ass, vtt, sidecar]
