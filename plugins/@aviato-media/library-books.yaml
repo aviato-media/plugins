@@ -1,0 +1,18 @@
+id: "@aviato-media/library-books"
+publisher: aviato-media
+name: library-books
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  assetPattern: "aviato-plugin-library-books-*.tar.gz"
+
+overrides:
+  displayName: "Books Library"
+  description: "Create a library of ebooks."
+  icon: BookOpen
+  categories: [library, books]
+  keywords: [books, ebooks, library, reading]

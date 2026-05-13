@@ -1,0 +1,18 @@
+id: "@aviato-media/musicbrainz"
+publisher: aviato-media
+name: musicbrainz
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  assetPattern: "aviato-plugin-musicbrainz-*.tar.gz"
+
+overrides:
+  displayName: "MusicBrainz Indexer"
+  description: "Identifies music using MusicBrainz with cover art from Cover Art Archive."
+  icon: MusicNotes
+  categories: [indexer, metadata]
+  keywords: [musicbrainz, music, metadata, cover-art]

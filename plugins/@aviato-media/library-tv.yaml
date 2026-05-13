@@ -1,0 +1,18 @@
+id: "@aviato-media/library-tv"
+publisher: aviato-media
+name: library-tv
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  assetPattern: "aviato-plugin-library-tv-*.tar.gz"
+
+overrides:
+  displayName: "TV Shows Library"
+  description: "Create a library of TV series, seasons, and episodes."
+  icon: Television
+  categories: [library, tv]
+  keywords: [tv, shows, series, library, video]

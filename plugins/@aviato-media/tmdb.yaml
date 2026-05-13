@@ -1,0 +1,18 @@
+id: "@aviato-media/tmdb"
+publisher: aviato-media
+name: tmdb
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  assetPattern: "aviato-plugin-tmdb-*.tar.gz"
+
+overrides:
+  displayName: "TMDb Indexer"
+  description: "Identifies movies and TV shows using The Movie Database (TMDb)."
+  icon: FilmReel
+  categories: [indexer, metadata, artwork-search]
+  keywords: [tmdb, movies, tv, metadata, artwork]

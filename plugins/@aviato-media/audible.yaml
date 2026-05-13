@@ -1,0 +1,18 @@
+id: "@aviato-media/audible"
+publisher: aviato-media
+name: audible
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  assetPattern: "aviato-plugin-audible-*.tar.gz"
+
+overrides:
+  displayName: "Audible Indexer"
+  description: "Identifies audiobooks using the Audible catalog via audnex.us. No API key required."
+  icon: Microphone
+  categories: [indexer, metadata]
+  keywords: [audible, audnex, audiobooks, metadata]
