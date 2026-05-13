@@ -8,6 +8,8 @@ source:
   type: github
   owner: aviato-media
   repo: official-plugins
+  tagPrefix: "tmdb@"
+  manifestPath: plugins/tmdb/plugin.json
   assetPattern: "aviato-plugin-tmdb-*.tar.gz"
 
 overrides:

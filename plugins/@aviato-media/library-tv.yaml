@@ -8,6 +8,8 @@ source:
   type: github
   owner: aviato-media
   repo: official-plugins
+  tagPrefix: "library-tv@"
+  manifestPath: plugins/library-tv/plugin.json
   assetPattern: "aviato-plugin-library-tv-*.tar.gz"
 
 overrides:

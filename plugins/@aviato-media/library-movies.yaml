@@ -9,9 +9,9 @@ source:
   type: github
   owner: aviato-media
   repo: official-plugins
-  assetPattern: "aviato-plugin-library-movies-*.tar.gz"
   tagPrefix: "library-movies@"
   manifestPath: plugins/library-movies/plugin.json
+  assetPattern: "aviato-plugin-library-movies-*.tar.gz"
 
 overrides:
   displayName: "Movies Library"

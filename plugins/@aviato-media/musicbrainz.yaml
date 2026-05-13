@@ -8,6 +8,8 @@ source:
   type: github
   owner: aviato-media
   repo: official-plugins
+  tagPrefix: "musicbrainz@"
+  manifestPath: plugins/musicbrainz/plugin.json
   assetPattern: "aviato-plugin-musicbrainz-*.tar.gz"
 
 overrides:

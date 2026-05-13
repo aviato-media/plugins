@@ -8,6 +8,8 @@ source:
   type: github
   owner: aviato-media
   repo: official-plugins
+  tagPrefix: "audible@"
+  manifestPath: plugins/audible/plugin.json
   assetPattern: "aviato-plugin-audible-*.tar.gz"
 
 overrides:

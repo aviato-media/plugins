@@ -9,9 +9,9 @@ source:
   type: github
   owner: aviato-media
   repo: official-plugins
-  assetPattern: "aviato-plugin-thumbnails-*.tar.gz"
   tagPrefix: "thumbnails@"
   manifestPath: plugins/thumbnails/plugin.json
+  assetPattern: "aviato-plugin-thumbnails-*.tar.gz"
 
 overrides:
   displayName: "Thumbnail Generator"

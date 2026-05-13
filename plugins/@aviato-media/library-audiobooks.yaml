@@ -8,6 +8,8 @@ source:
   type: github
   owner: aviato-media
   repo: official-plugins
+  tagPrefix: "library-audiobooks@"
+  manifestPath: plugins/library-audiobooks/plugin.json
   assetPattern: "aviato-plugin-library-audiobooks-*.tar.gz"
 
 overrides:
