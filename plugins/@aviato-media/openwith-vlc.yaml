@@ -1,0 +1,20 @@
+id: "@aviato-media/openwith-vlc"
+publisher: aviato-media
+name: openwith-vlc
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  tagPrefix: "openwith-vlc@"
+  manifestPath: plugins/openwith-vlc/plugin.json
+  assetPattern: "aviato-plugin-openwith-vlc-*.tar.gz"
+
+overrides:
+  displayName: "Open With VLC"
+  description: "Adds VLC to the Open With menu for video items. Uses vlc:// on desktop, vlc-x-callback:// with external subtitle support on iOS, and the intent:// scheme on Android."
+  icon: MonitorPlay
+  categories: [playback, openwith]
+  keywords: [vlc, video, player, openwith, ios, android, desktop]

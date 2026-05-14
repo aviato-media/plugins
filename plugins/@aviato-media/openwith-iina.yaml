@@ -1,0 +1,20 @@
+id: "@aviato-media/openwith-iina"
+publisher: aviato-media
+name: openwith-iina
+tier: official
+featured: false
+
+source:
+  type: github
+  owner: aviato-media
+  repo: official-plugins
+  tagPrefix: "openwith-iina@"
+  manifestPath: plugins/openwith-iina/plugin.json
+  assetPattern: "aviato-plugin-openwith-iina-*.tar.gz"
+
+overrides:
+  displayName: "Open With IINA"
+  description: "Adds IINA to the Open With menu for video items on macOS."
+  icon: MonitorPlay
+  categories: [playback, openwith]
+  keywords: [iina, video, player, openwith, macos]

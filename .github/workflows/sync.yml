@@ -47,7 +47,7 @@ jobs:
           set -eu
           token=$(curl -fsSL \
             -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://avi.ato.software/api/plugins" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://aviato.media/api/plugins" \
             | jq -r '.value')
           echo "::add-mask::$token"
           echo "token=$token" >> "$GITHUB_OUTPUT"
@@ -62,4 +62,4 @@ jobs:
             -H "Authorization: Bearer $OIDC_TOKEN" \
             -H "Content-Type: application/json" \
             --data-binary @payload.json \
-            https://avi.ato.software/api/plugins/internal/sync
+            https://aviato.media/api/plugins/internal/sync
