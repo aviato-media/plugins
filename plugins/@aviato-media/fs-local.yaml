@@ -2,6 +2,7 @@ id: "@aviato-media/fs-local"
 publisher: aviato-media
 name: fs-local
 tier: official
+recommended: true
 featured: true
 featuredRank: 2
 

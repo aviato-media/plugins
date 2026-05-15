@@ -2,6 +2,7 @@ id: "@aviato-media/library-movies"
 publisher: aviato-media
 name: library-movies
 tier: official
+recommended: true
 featured: true
 featuredRank: 1
 

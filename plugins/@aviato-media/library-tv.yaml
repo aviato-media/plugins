@@ -2,6 +2,7 @@ id: "@aviato-media/library-tv"
 publisher: aviato-media
 name: library-tv
 tier: official
+recommended: true
 featured: false
 
 source:

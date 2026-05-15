@@ -2,7 +2,7 @@ id: "@aviato-media/tmdb"
 publisher: aviato-media
 name: tmdb
 tier: official
-featured: false
+recommended: true
 
 source:
   type: github
