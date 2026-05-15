@@ -2,7 +2,7 @@ id: "@aviato-media/external-subtitles"
 publisher: aviato-media
 name: external-subtitles
 tier: official
-featured: false
+recommended: true
 
 source:
   type: github

@@ -4,6 +4,7 @@ name: thumbnails
 tier: official
 featured: true
 featuredRank: 3
+recommended: true
 
 source:
   type: github
